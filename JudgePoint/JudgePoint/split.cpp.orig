@@ -1,0 +1,16 @@
+#include <iostream.h>
+int main(int argc, char *argv[])
+{
+    char s[] = "12,22";
+    const char *d = ",";
+    char *p;
+    p = strtok(s,d);
+  
+while(p)
+    {
+        printf("%s\n",p);
+        p=strtok(NULL,d);
+    }
+   
+    return 0;
+}
